@@ -1,0 +1,12 @@
+vida = 100
+
+def atack():
+
+  print("1 = -10pt")
+  tipo = input('qual o ataque?')
+
+  if tipo == 1:
+    newVida = vida - 10;
+    print(newVida)
+
+atack()
