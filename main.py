@@ -2,7 +2,7 @@ print('welcome to pokemon battle')
 x = 10
 print('vida = ', x)
 
-# how we going to coding the 'life system'
+# how we going to code the 'life system'
 
 while x > 0:
   f = int(input('digite aqui seu numero de atks '))
