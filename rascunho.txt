@@ -10,3 +10,35 @@ def atack():
     print(newVida)
 
 atack()
+
+
+Objeto pokemons:
+
+pra definir quem são os pokemons a serem usados na batalha
+
+Pokemons = {
+  "pikachu",
+  "bulbasaur",
+  "charmander"
+}
+
+agora, definir os atributos e os metodos de cada pokemon 
+
+no pseudo codigo (feito de forma incorreta rsrs)
+
+ex:
+
+Pikachu = {
+  vida = 100
+  cor = "yellow, red, black"
+  poderes (metodos) = {
+    "choque do trovao",
+    "cauda de ferro",
+  }
+}
+
+e assim por diante
+
+A ideia da criação dos objetos, é poder acessar os atributos dos pokemons de cada batalha e poder deixa-los armazenados em outro arquivo.
+seria pra incluir os objetos no arquivo main (deixando ele mais limpo)
+
