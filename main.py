@@ -1,23 +1,61 @@
 import os
+from numpy import random
 
 print('welcome to pokemon battle')
-x = 10
-print('vida = ', x)
 
-# how we going to code the 'life system'
+# my  information
+myLife = 100
+print('vida = ', myLife)
+
+# cleaning
 clear = lambda: os.system('clear')
+
+#oponent
+oponent = 'equipe rocket'
+oponentLife = 100
+dano = random.randint(5, 10)
 
 if(1):
   print('chegou a hora de escolher seu pokemon!')
+  print('Digite o numero do pokemon \n 1 > Pikachu \n 2 > Squirtle \n 3 > Bulbasaur')
+  
+  option = ''
+  while option == '':
+    option = input('Pokemon: ')
+    
+    if(option == '1'or option == '2' or option == '3'):
+      
+      if option == '1':
+        pokemon = 'Pikachu'
+        
+      if option == '2':
+        pokemon = 'Squirtle'
+        
+      if option == '3':
+        pokemon = 'Bulbasaur'
+        
+        
+    else:
+      print('não encontrei o pokemon selecionado \n por favor, tente novamente')
+      exit()
 
-while x > 0:
+clear()
+print(pokemon, ' eu escolho voce!')
+while myLife > 0:
   
   # here, will be the pokemon choice
+
+  myAtack = int(input('\n digite aqui seu numero de atks: '))
   
-  f = int(input('digite aqui seu numero de atks '))
-  x = x - f
+  myLife = myLife - dano
+  oponentLife = oponentLife - myAtack
   clear()
-  if (x <= 0):
-      print('game over')
+  if (myLife <= 0):
+      print('\n you lost, game over')
+  elif oponentLife <= 0:
+    print('\n you win!')
+    exit()
   else:
-      print('agora a vida é ', x)
+      print('\n', oponent, ' atacou você: -', dano, '  de HP \n')
+      print( pokemon, ': ', myLife, ' HP')
+      print(oponent, ': ', oponentLife, ' HP')
