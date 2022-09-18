@@ -5,7 +5,7 @@ print('welcome to pokemon battle')
 
 # my  information
 myLife = 100
-print('vida = ', myLife)
+print('vida = ', myLife, ' HP \n')
 
 # cleaning
 clear = lambda: os.system('clear')
