@@ -37,14 +37,16 @@ if(1):
         pokemon = "Bulbasaur"
         
     else:
-      print("não encontrei o pokemon selecionado \n por favor, tente novamente")
+      print("I didn't find the selected Pokemon \n please try again")
       exit()
 
 clear()
-print(pokemon, " eu escolho voce!")
+print(pokemon, " i choose you!")
 while myLife > 0:
 
-  myAtack = int(input("\n digite aqui seu numero de atks: "))
+  myAtack = int(input("\n digite o tamanho o ataque: "))
+
+  # the next step is will make the menu with the pokemon's atacks pre-defined
   
   myLife = myLife - dano
   oponentLife = oponentLife - myAtack
