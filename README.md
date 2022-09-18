@@ -4,12 +4,16 @@
 
 ### A Pokemon Battle in Python 
 
-#### #1
+#### >> The first step to play game
 ![one](img/bem-vindo.png)
 
-#### #2
+#### >> Second step  
 
 ![image](img/escolhoVoce.png)
 
-#### #3
+#### >> During the game
 ![three](img/atks.png)
+
+
+>> ###### you can view the code in:
+>> [Code The Pokemon Battle](https://replit.com/@AnselmoLopes/PokemonBattle#main.py)
