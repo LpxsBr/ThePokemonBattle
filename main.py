@@ -15,6 +15,8 @@ oponent = 'equipe rocket'
 oponentLife = 100
 dano = random.randint(5, 10)
 
+# here, will be the pokemon choice
+
 if(1):
   print('chegou a hora de escolher seu pokemon!')
   print('Digite o numero do pokemon \n 1 > Pikachu \n 2 > Squirtle \n 3 > Bulbasaur')
@@ -42,8 +44,6 @@ if(1):
 clear()
 print(pokemon, ' eu escolho voce!')
 while myLife > 0:
-  
-  # here, will be the pokemon choice
 
   myAtack = int(input('\n digite aqui seu numero de atks: '))
   
